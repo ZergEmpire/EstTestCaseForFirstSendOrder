@@ -154,7 +154,7 @@ public class TestBase {
 
     @Step("Тыкаем на отправку заказа")
     public void sendOrder() {
-        $x("//div[@class = \"item-cart-buttons\" ]/button[contains(@class, \"btn\") and not (@id)]").scrollTo().click();
+        $x("//div[@class = \"item-cart-buttons\" ]/button[contains(@class, \"btn\")]").scrollTo().click();
     }
 
     @Step("Ждём перехода в статус принят")
